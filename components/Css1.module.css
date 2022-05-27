@@ -1,0 +1,101 @@
+@import url("https://font.googleapis.com/css?family=Oswald:400,700");
+
+div.Menu_hover1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #848994;
+}
+
+div.Menu_hover1 ul {
+    position: relative;
+    transform: skewY(-15deg);   /* Y축 회전*/
+}
+
+div.Menu_hover1 ul li{
+    position: relative;
+    list-style: none;
+    width: 200px;
+    background-color: #3e3f46;
+    padding: 15px;
+    transition: 0.5s;
+}
+
+div.Menu_hover1 ul li::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 40px;
+    height: 100%;
+    background-color: #3e3f46;
+    transform-origin: right;
+    transform: skewY(45deg);
+    transition: 0.5s;
+}
+
+div.Menu_hover1 ul li::after{
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #3e3f46;
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    transition: 0.5s;
+}
+
+div.Menu_hover1 ul li.N6 {
+    z-index: 6;
+}
+
+div.Menu_hover1 ul li.N5 {
+    z-index: 5;
+}
+
+div.Menu_hover1 ul li.N4 {
+    z-index: 4;
+}
+
+div.Menu_hover1 ul li.N3 {
+    z-index: 3;
+}
+
+div.Menu_hover1 ul li.N2 {
+    z-index: 2;
+}
+
+div.Menu_hover1 ul li.N1::after {
+    z-index: 1;
+    box-shadow: -100px 100px 20px rgba(0,0,0,0.7); 
+}
+
+div.Menu_hover1 ul li:hover{
+    background-color: #33a3ee;
+    transform: translateX(-50px);      /*x축 -50px 이동*/
+}
+
+div.Menu_hover1 ul li:hover::before{
+    background-color: #33a3ee;
+}
+
+div.Menu_hover1 ul li:hover::after{
+    background-color: #33a3ee;
+}
+
+div.Menu_hover1 ul li a{
+    text-decoration: none;
+    color: #999;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    font-weight: 600;
+}
+
+div.Menu_hover1 ul li:hover a{
+    color: #fff;
+}
