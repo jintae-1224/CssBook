@@ -1,9 +1,11 @@
-import Css1 from "../components/Css1"
+import DotMenu from "../components/DotMenu"
+import MenuHover from "../components/MenuHover"
 
 const css = () => {
     return(
         <div>
-            <Css1 />
+            <MenuHover />
+            <DotMenu />
         </div>
     )
 }

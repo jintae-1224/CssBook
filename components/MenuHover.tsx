@@ -1,9 +1,9 @@
 import classNames from "classnames/bind";
-import styles from "./Css1.module.css";
+import styles from "./MenuHover.module.css";
 
 const cx = classNames.bind(styles);
 
-const Css1 = () => {
+const MenuHover = () => {
     return(
         <div className={cx("Menu_hover1")}>
             <ul>
@@ -18,4 +18,4 @@ const Css1 = () => {
     )
 }
 
-export default Css1
+export default MenuHover
